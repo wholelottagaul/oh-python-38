@@ -28,7 +28,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             )
             
         rating['id'] = str(uuid.uuid4())
-        rating['timestamp'] = datetime.now()
+        rating['timestamp'] = str(datetime.now())
 
         return func.HttpResponse(
             json.dumps(rating),
