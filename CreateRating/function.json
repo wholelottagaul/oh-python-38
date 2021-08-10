@@ -7,9 +7,17 @@
       "direction": "in",
       "name": "req",
       "methods": [
-        "get",
         "post"
       ]
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "doc",
+      "databaseName": "bfyoc",
+      "collectionName": "ratings",
+      "createIfNotExists": "true",
+      "connectionStringSetting": "CosmosDBConnectionString"
     },
     {
       "type": "http",
